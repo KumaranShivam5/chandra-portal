@@ -23,14 +23,16 @@
 </head>
 
 <body>
+<div id="index-js-area">
+
     <div class="ind-wrapper-grid">
         <div class="ind-head">CHANDRA CATALOGUE</div>
 
-        <div class="ind-nav">
+        <div class="nav">
             <div class="nav-top">
-                <div class="ind-navel">home</div>
-                <div class="ind-navel">about</div>
-                <div class="ind-navel">source</div>
+                <div class="navel" onclick="window.location.href='index.html'">home</div>
+                <div class="navel">about</div>
+                <div class="navel">source</div>
             </div>
             <div class="nav-bottom">
                 Developed by Shivam Kumaran <br>
@@ -58,13 +60,13 @@
                 </select>
                 <label class="l1">Probability</label>
                 <input type="text" class="inp1"></input>
-                <button class="ind-go">Go</button>
+                <button class="ind-go" @click="flag_table=true,impath='images/temp2.jpg'">Go</button>
             </div>
             
         </div>
 
         <div class="ind-map">
-            <img src="images/temp1.jpg" alt="" class="ind-image">
+            <img :src="impath" alt="" class="ind-image">
         </div>
         <div class="ind-table">
             <div class="ind-table-row">
@@ -75,16 +77,19 @@
                 <div class="ind-t-col ind-t-h-col">P</div>
             </div>
 
-            <div class="ind-table-row">
-                <div class="ind-t-col">d</div>
-                <div class="ind-t-col">d</div>
-                <div class="ind-t-col">d</div>
-                <div class="ind-t-col">d</div>
-                <div class="ind-t-col">d</div>
+            <div class="ind-table-row" v-if="flag_table">
+                <div class="ind-t-col"><a href='source.html'>AGN-HGC-104</a></div>
+                <div class="ind-t-col">--</div>
+                <div class="ind-t-col">--</div>
+                <div class="ind-t-col">--</div>
+                <div class="ind-t-col">--</div>
             </div>
         </div>
     </div>
 
+
+</div>
+<script src='js/index.js' type="text/javascript"></script>
 </body>
 
 </html>
