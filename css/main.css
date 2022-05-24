@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand');
+
+:root {
+    --main-bg-color-dark: linear-gradient(125.12deg, #33d1af 0%,#2262ee 50%, #95b3f5 100.26%);
+    --main-bg-color-light: linear-gradient(125.12deg, #f2f7f6 0%,#c49ee7 50%, #9e9eee 100.26%);
+    --main-bg-color: rgba(255,255,255, 0.6);
+    --accent-col1: rgb(43, 47, 65);
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    width: 100vw;
+    margin: 0px;
+    height: 100vh;
+    font-size: 2.5vh;
+    font-family: 'Roboto Mono', monospace;
+}
+
+a {
+    text-decoration: none;
+    color:aqua;
+}
+
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(32, 88, 172);
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: var(--button-color-v2);
+}
+

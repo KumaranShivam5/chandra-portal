@@ -5,10 +5,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.0/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/b629a77575.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
 <body>
+    <div class="ind-wrapper-grid">
+        <div class="ind-head">CHANDRA CATALOGUE</div>
+
+        <div class="ind-nav">
+            <div class="nav-top">
+                <div class="ind-navel">home</div>
+                <div class="ind-navel">about</div>
+                <div class="ind-navel">source</div>
+            </div>
+            <div class="nav-bottom">
+                Developed by Shivam Kumaran <br>
+                Web-Design: Ushasi Bhowmick
+            </div>
+        </div>
+
+        <div class="ind-search">
+            <div class="ind-inp-set">
+                <label class="l1">RA</label>
+                <input type="text" class="inp1"></input>
+                <label class="l1">Dec</label>
+                <input type="text" class="inp1"></input>
+                <label class="l1">Radius</label>
+                <input type="text" class="inp1"></input>
+            </div>
+            
+            <div class="ind-inp-set"> 
+                <label class="l1">Class</label>
+                <select class="inp1">
+                <option>AGN</option>
+                <option>LMXB</option>
+                <option>CV</option>
+                <option>Pulsar</option>
+                </select>
+                <label class="l1">Probability</label>
+                <input type="text" class="inp1"></input>
+                <button class="ind-go">Go</button>
+            </div>
+            
+        </div>
+
+        <div class="ind-map">
+            <img src="images/temp1.jpg" alt="" class="ind-image">
+        </div>
+        <div class="ind-table">
+            <div class="ind-table-row">
+                <div class="ind-t-col ind-t-h-col">Name</div>
+                <div class="ind-t-col ind-t-h-col">RA</div>
+                <div class="ind-t-col ind-t-h-col">dec</div>
+                <div class="ind-t-col ind-t-h-col">Class</div>
+                <div class="ind-t-col ind-t-h-col">P</div>
+            </div>
+
+            <div class="ind-table-row">
+                <div class="ind-t-col">d</div>
+                <div class="ind-t-col">d</div>
+                <div class="ind-t-col">d</div>
+                <div class="ind-t-col">d</div>
+                <div class="ind-t-col">d</div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
